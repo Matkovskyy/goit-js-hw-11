@@ -40,10 +40,9 @@ fetchRequest (inputNextPage, numberNextPage);
 }
 }
 
-
-
 function onLoadMore(){
   refs.buttonLoad.classList.add('ishidden');
+  refs.buttonLoad.textContent = 'Loading...';
   numberNextPage += 1;
   inputNextPage = refs.input.value.trim();
   fetchRequest(inputNextPage, numberNextPage);
